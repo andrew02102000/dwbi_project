@@ -1,0 +1,11 @@
+CategoryID	Name	ModifiedDate
+1	Grocery	4/30/2008 0:00
+2	Miscellaneous	4/30/2008 0:00
+3	Bakery	4/30/2008 0:00
+4	Pharmaceutical	4/30/2008 0:00
+5	Packaged Meat	4/30/2008 0:00
+6	Seafood	4/30/2008 0:00
+7	Natural Products	4/30/2008 0:00
+8	"Dairy, Juices "	4/30/2008 0:00
+9	Prepared Food	4/30/2008 0:00
+10	Skin & Hair Care	4/30/2008 0:00
