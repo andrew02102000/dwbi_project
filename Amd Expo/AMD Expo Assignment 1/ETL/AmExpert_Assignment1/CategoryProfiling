@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources>
+    <DtsDataSource ID="{D7A1B9BC-0E11-481F-8E06-D96398FAC30E}" Name="campaignProfiling">
+      <DtsConnectionManagerID>campaignProfiling</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{FCF20023-0FE0-41EB-805A-0CA95F63A068}" Name="CategoryProfiling">
+      <DtsConnectionManagerID>CategoryProfiling</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{52E495BF-E1B7-4B10-B517-3D4F04C92737}" Name="CustomerProfiling">
+      <DtsConnectionManagerID>CustomerProfiling</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{BAF1C588-8743-4559-8FFC-863DB5E3FD38}" Name="DESKTOP-6KGQ1VL.AmExpert_Staging">
+      <DtsConnectionManagerID>DESKTOP-6KGQ1VL.AmExpert_Staging</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{30FB6D05-A4E7-4435-A498-52FCF2931FD8}" Name="DESKTOP-6KGQ1VL.AmExpert_Staging 1">
+      <DtsConnectionManagerID>DESKTOP-6KGQ1VL.AmExpert_Staging 1</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{BAC73A67-2FF9-4701-9B26-EA238886537B}" Name="ItemProfiling">
+      <DtsConnectionManagerID>ItemProfiling</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{69A8E2A4-594B-4E52-9E00-750C413036A7}" Name="TrainProfiling">
+      <DtsConnectionManagerID>TrainProfiling</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{255CD672-2A98-4357-843D-BA9B869B8CB1}" Name="TransactionProfiling">
+      <DtsConnectionManagerID>TransactionProfiling</DtsConnectionManagerID>
+    </DtsDataSource>
+  </DataSources>
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{BAF1C588-8743-4559-8FFC-863DB5E3FD38}</DataSourceID>
+        <Table Schema="dbo" Table="CategoryStaging" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{BAF1C588-8743-4559-8FFC-863DB5E3FD38}</DataSourceID>
+        <Table Schema="dbo" Table="CategoryStaging" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{BAF1C588-8743-4559-8FFC-863DB5E3FD38}</DataSourceID>
+        <Table Schema="dbo" Table="CategoryStaging" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq">
+        <DataSourceID>{BAF1C588-8743-4559-8FFC-863DB5E3FD38}</DataSourceID>
+        <Table Schema="dbo" Table="CategoryStaging" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <ColumnPatternProfileRequest ID="PatternReq">
+        <DataSourceID>{BAF1C588-8743-4559-8FFC-863DB5E3FD38}</DataSourceID>
+        <Table Schema="dbo" Table="CategoryStaging" />
+        <Column IsWildCard="true" />
+        <MaxNumberOfPatterns>10</MaxNumberOfPatterns>
+        <PercentageDataCoverageDesired>95</PercentageDataCoverageDesired>
+        <CaseSensitive>false</CaseSensitive>
+        <Delimiters> \t\r\n</Delimiters>
+        <Symbols>,.;:-"'`~=&amp;/\\@!?()&lt;&gt;[]{}|#*^%</Symbols>
+        <TagTableName />
+      </ColumnPatternProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq">
+        <DataSourceID>{BAF1C588-8743-4559-8FFC-863DB5E3FD38}</DataSourceID>
+        <Table Schema="dbo" Table="CategoryStaging" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{BAF1C588-8743-4559-8FFC-863DB5E3FD38}</DataSourceID>
+        <Table DataSource="DESKTOP-6KGQ1VL" Database="AmExpert_Staging" Schema="dbo" Table="CategoryStaging" RowCount="10" />
+        <Column Name="CategoryID" SqlDbType="Decimal" MaxLength="0" Precision="18" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{BAF1C588-8743-4559-8FFC-863DB5E3FD38}</DataSourceID>
+        <Table DataSource="DESKTOP-6KGQ1VL" Database="AmExpert_Staging" Schema="dbo" Table="CategoryStaging" RowCount="10" />
+        <Column Name="Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{BAF1C588-8743-4559-8FFC-863DB5E3FD38}</DataSourceID>
+        <Table DataSource="DESKTOP-6KGQ1VL" Database="AmExpert_Staging" Schema="dbo" Table="CategoryStaging" RowCount="10" />
+        <Column Name="ModifiedDate" SqlDbType="DateTime" MaxLength="0" Precision="255" Scale="255" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq">
+        <DataSourceID>{BAF1C588-8743-4559-8FFC-863DB5E3FD38}</DataSourceID>
+        <Table DataSource="DESKTOP-6KGQ1VL" Database="AmExpert_Staging" Schema="dbo" Table="CategoryStaging" RowCount="10" />
+        <Column Name="CategoryID" SqlDbType="Decimal" MaxLength="0" Precision="18" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>1</MinValue>
+        <MaxValue>10</MaxValue>
+        <Mean>5.5</Mean>
+        <StdDev>2.87228132326901</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq">
+        <DataSourceID>{BAF1C588-8743-4559-8FFC-863DB5E3FD38}</DataSourceID>
+        <Table DataSource="DESKTOP-6KGQ1VL" Database="AmExpert_Staging" Schema="dbo" Table="CategoryStaging" RowCount="10" />
+        <Column Name="ModifiedDate" SqlDbType="DateTime" MaxLength="0" Precision="255" Scale="255" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>2008-04-30T00:00:00.0000000</MinValue>
+        <MaxValue>2008-04-30T00:00:00.0000000</MaxValue>
+      </ColumnStatisticsProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{BAF1C588-8743-4559-8FFC-863DB5E3FD38}</DataSourceID>
+        <Table DataSource="DESKTOP-6KGQ1VL" Database="AmExpert_Staging" Schema="dbo" Table="CategoryStaging" RowCount="10" />
+        <Column Name="Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>6</MinLength>
+        <MaxLength>16</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>6</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>7</Length>
+            <Count>2</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>13</Length>
+            <Count>3</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>14</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>16</Length>
+            <Count>3</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq">
+        <DataSourceID>{BAF1C588-8743-4559-8FFC-863DB5E3FD38}</DataSourceID>
+        <Table DataSource="DESKTOP-6KGQ1VL" Database="AmExpert_Staging" Schema="dbo" Table="CategoryStaging" RowCount="10" />
+        <KeyColumns>
+          <Column Name="Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{BAF1C588-8743-4559-8FFC-863DB5E3FD38}</DataSourceID>
+        <Table DataSource="DESKTOP-6KGQ1VL" Database="AmExpert_Staging" Schema="dbo" Table="CategoryStaging" RowCount="10" />
+        <Column Name="Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>10</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>"Dairy, Juices "</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Bakery</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Grocery</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Miscellaneous</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Natural Products</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Packaged Meat</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Pharmaceutical</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Prepared Food</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Seafood</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Skin &amp; Hair Care</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{BAF1C588-8743-4559-8FFC-863DB5E3FD38}</DataSourceID>
+        <Table DataSource="DESKTOP-6KGQ1VL" Database="AmExpert_Staging" Schema="dbo" Table="CategoryStaging" RowCount="10" />
+        <Column Name="ModifiedDate" SqlDbType="DateTime" MaxLength="0" Precision="255" Scale="255" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>1</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>2008-04-30T00:00:00.0000000</Value>
+            <Count>10</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq" IsExact="true">
+        <DataSourceID>{BAF1C588-8743-4559-8FFC-863DB5E3FD38}</DataSourceID>
+        <Table DataSource="DESKTOP-6KGQ1VL" Database="AmExpert_Staging" Schema="dbo" Table="CategoryStaging" RowCount="10" />
+        <Column Name="Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>PHARMACEUTICAL</RegexText>
+            <Frequency>10</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>MISCELLANEOUS</RegexText>
+            <Frequency>10</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>NATURAL PRODUCTS</RegexText>
+            <Frequency>10</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>PREPARED FOOD</RegexText>
+            <Frequency>10</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>PACKAGED MEAT</RegexText>
+            <Frequency>10</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>SEAFOOD</RegexText>
+            <Frequency>10</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>SKIN &amp; HAIR CARE</RegexText>
+            <Frequency>10</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>"DAIRY, JUICES "</RegexText>
+            <Frequency>10</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>GROCERY</RegexText>
+            <Frequency>10</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>BAKERY</RegexText>
+            <Frequency>10</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+    </Profiles>
+  </DataProfileOutput>
+</DataProfile>
