@@ -1,5 +1,4 @@
-
-###Data Warehousing and Business Intelligence Project
+Data Warehousing and Business Intelligence Project
 
 Overview
 This repository encompasses my comprehensive Data Warehousing and Business Intelligence projects undertaken during my academic journey. For my initial project, I utilized the Online Shopping Dataset as the focal point for my academic requirements. However, due to dataset errors, the Business Intelligence aspect couldn't be completed as intended.
