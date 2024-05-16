@@ -1,9 +1,9 @@
 Data Warehousing and Business Intelligence Project
 
 Overview
-This repository encompasses my comprehensive Data Warehousing and Business Intelligence projects undertaken during my academic journey. For my initial project, I utilized the Online Shopping Dataset as the focal point for my academic requirements. However, due to dataset errors, the Business Intelligence aspect couldn't be completed as intended.
+This repository encompasses my comprehensive Data Warehousing and Business Intelligence projects undertaken during my academic journey. 
 
-In response, I embarked on a subsequent project using the AMD Expo dataset, a more robust and reliable dataset. This initiative served both my academic pursuits and personal knowledge enhancement. The projects presented here showcase my proficiency in the realms of Data Warehousing and Business Intelligence.
+I embarked on a subsequent project using the AMD Expo dataset, a more robust and reliable dataset. This initiative served both my academic pursuits and personal knowledge enhancement. The projects presented here showcase my proficiency in the realms of Data Warehousing and Business Intelligence.
 
 
 Technologies and Tools Utilized
@@ -20,15 +20,6 @@ Despite encountering challenges in the Online Shopping Dataset project, it provi
 
 AMD Expo Dataset Project
 The AMD Expo dataset, meticulously chosen for its reliability, became the foundation for my subsequent project. Leveraging Microsoft SQL Server, Visual Studio, and SSRS, I successfully developed a comprehensive dashboard. This project not only fulfilled my academic requirements but also served as a valuable personal endeavor to enhance my understanding of Business Intelligence.
-
-
-
-Projects Included
-
-Online Shopping Dataset Project
-
-Academic project exploring data warehousing and initial stages of Business Intelligence.
-Insights gained despite challenges in the dataset.
 
 
 
